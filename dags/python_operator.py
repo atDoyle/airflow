@@ -41,7 +41,7 @@ for i in range(5):
     task = PythonOperator(
         task_id=f"sleep-for-{5*i}-seconds",
         python_callable=my_sleeping_function,
-        op_kwargs={'num_seconds': 5*i,
+        op_kwargs={'num_seconds': 5*i},
         dag=dag,
     )
 
