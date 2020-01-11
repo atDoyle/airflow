@@ -19,7 +19,7 @@ dag = DAG(
 
 
 def print_context(ds, **kwargs):
-    pprint(kwargs)
+    print(kwargs)
     print(ds)
     return
 
